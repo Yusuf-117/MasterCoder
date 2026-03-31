@@ -92,7 +92,9 @@
 			color: #fff;
 			text-align: center;
 		}
-
+		.text-xs{
+			font-size: 30%;
+		}
 	</style>
 </head>
 <body>
@@ -104,36 +106,10 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#creds">Credits</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#challenge">The Challenge</a>
-					</li>
-				</div>
-			</ul>
 		</div>
 	</nav>
-	<div class="parallax text-center"><div class="layer"></div><div class="welcome"><h2>A little inside joke for you DC fans <h6>*nudge*</h6></h2></div></div>
+	<div class="parallax text-center"><div class="layer"></div><div class="welcome"><h2>A little joke for you DC fans <p class="text-muted text-xs mt-3">*because his name is parallax... and this is parallax effect*</p></h2></div></div>
 
-	<!-- <div class="container text-center pl-5 pr-5 pb-5 ">
-		<div class="row">
-			<div id="about" class="col">
-				<h1 class="mt-4 mb-4">What does 'Master Coder' mean?</h1>
-				<h4>Through <strike>barely any</strike> extensive research, I have deduced that it can mean different things to different people.</h4>
-
-				<div class="quoteBlock text-right mb-3"><p>I think that 'Master coder' has less to do with knowing the ins and outs of different languages, but being able to problem solve really well (i.e. researching a topic they're unfamiliar with, zeroing in on key aspects of a project when thinking about code architecture etc.)</p> - Gwaine</div>
-				<div class="quoteBlock text-right mb-3"><p>To me a master coder is somebody who has experience in programming and has the attitude of knowing how to create something while learning more.</p> - Ducky</div>
-				<div class="quoteBlock text-right mb-3"><p>I think a master coder is one who is not only proficient in programming but also problem solving in general.</p> - Styx</div>
-			</div>
-		</div>
-	</div> -->
 	<div class="text-center">
 		<h1 class="mt-4 mb-4">What does 'Master Coder' mean?</h1>
 		<h4>Through <strike>barely any</strike> extensive research, I have deduced that it can mean different things to different people...</h4>
@@ -153,7 +129,7 @@
 						<div class="quoteBlock text-right mb-3"><p>To me a master coder is somebody who has experience in programming and has the attitude of knowing how to create something while learning more.</p> - Ducky</div>
 					</div>
 					<div class="carousel-item">
-						<div class="quoteBlock text-right mb-3"><p>I think a master coder is one who is not only proficient in programming but also problem solving in general.</p> - Styx</div>
+						<div class="quoteBlock text-right mb-3"><p>I think a master coder is one who is not only proficient in programming but also problem solving in general.</p> - The other one</div>
 					</div>
 				</div>
 			</div>
@@ -192,7 +168,6 @@
 				<h2 class="text-center">The Task</h2><br>
 				<p>You've been given an array in the text editor. Your task is to make a function that counts how many times each word occurs in that array. You may <b>not</b> edit that array and to submit your answer, use the <code>Console.log()</code> command and the output will appear in the result section.</p>
 				<p class="text-center"><b>The desired output is this object:</b> <code>{cat:2,dog:1,cow:3}</code></p>
-				<p class="text-center">Yes, I am aware you could just do <code>console.log("{cat:2,dog:1,cow:3}");</code>. But where's the fun in that?</p>
 			</div>
 		</div>
 		<button class="stbtn btn btn-success btn-lg mb-3">Start</button>
@@ -296,15 +271,15 @@
 					"color":"#fff"
 				});
 			}
-			else if($(".carousel-item.active:contains('Styx')").length > 0){
+			else if($(".carousel-item.active:contains('ducky')").length > 0){
 				$('#myCarousel').css({
-					"background-color":"#4d0a90",
+					"background-color":"#062c50",
 					"color":"#fff"
 				});
 			}
 			else{
 				$('#myCarousel').css({
-					"background-color":"#062c50",
+					"background-color":"#4d0a90",
 					"color":"#fff"
 				});
 			}
